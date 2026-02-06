@@ -1,0 +1,7 @@
+{
+  "name": "2iad-ML4T Pro",
+  "description": "2iad-ML4T Pro | Trading strategy experiment with enterprise-grade ML price prediction.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
