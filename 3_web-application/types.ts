@@ -40,12 +40,28 @@ export interface Order {
   symbol: string;
 }
 
+export interface ModelComponent {
+  signal: SignalType;
+  confidence: number;
+  weight: number;
+}
+
 export interface MLPrediction {
   signal: SignalType;
   confidence: number;
   accuracy?: number;
   symbol: string;
   timestamp: string;
+  fusion: {
+    technical: ModelComponent;
+    sentiment: ModelComponent;
+  };
+  sentiment_metrics?: {
+    sentiment_score: number;
+    social_volume: number;
+    trending_rank: number;
+    news_polarity: number;
+  };
 }
 
 export interface MarketState {
