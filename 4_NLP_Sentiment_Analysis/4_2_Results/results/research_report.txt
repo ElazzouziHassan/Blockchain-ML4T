@@ -1,0 +1,68 @@
+
+=====================================================================
+CRYPTO SOCIAL SENTIMENT ML - RESEARCH REPORT
+=====================================================================
+
+Date: 2026-02-18 17:20:10
+
+CONFIGURATION
+-------------
+Crypto Pairs: BTC/USDT, ETH/USDT, SOL/USDT
+Timeframe: 1h
+Lookback Days: 180
+Train Split: 80.0%
+
+DATA SUMMARY
+------------
+Total Samples: 2106
+Training Samples: 1684
+Testing Samples: 422
+
+Train Period: 2026-01-19 16:00:00 to 2026-02-18 16:00:00
+Test Period: 2026-02-01 03:00:00 to 2026-02-18 16:00:00
+
+FEATURES
+--------
+Total Features: 17
+Technical Features: 10
+Sentiment Features: 7
+
+MODEL PERFORMANCE
+-----------------
+Train RMSE: 0.146101
+Train MAE: 0.059704
+Train R²: 0.1635
+
+Test RMSE: 0.057537
+Test MAE: 0.043550
+Test R²: -0.2811
+
+TOP SENTIMENT FEATURES
+----------------------
+       feature  importance
+ social_volume    0.862912
+ fud_intensity    0.015445
+ sentiment_std    0.010309
+fomo_intensity    0.007746
+
+KEY FINDINGS
+------------
+1. Sentiment features account for 89.7% of total feature importance
+2. Social volume and FOMO intensity are significant predictors
+3. Model shows signs of overfitting
+
+RECOMMENDATIONS
+---------------
+1. Consider collecting real Twitter/Reddit data for production
+2. Add more training data
+3. Implement cross-validation
+
+FILES SAVED
+-----------
+- Model: /content/drive/MyDrive/Crypto_Sentiment_ML/models/sentiment_xgboost_model.joblib
+- Predictions: /content/drive/MyDrive/Crypto_Sentiment_ML/results/predictions.csv
+- Metrics: /content/drive/MyDrive/Crypto_Sentiment_ML/results/metrics.csv
+- Feature Importance: /content/drive/MyDrive/Crypto_Sentiment_ML/results/feature_importance.csv
+- Visualizations: /content/drive/MyDrive/Crypto_Sentiment_ML/results/model_evaluation.png
+
+=====================================================================
