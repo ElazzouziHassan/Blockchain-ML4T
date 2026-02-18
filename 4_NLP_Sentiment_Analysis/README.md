@@ -97,7 +97,7 @@ Crypto_Sentiment_ML/
 - Visual diagnostics
 
 
-## 📡 Data Sources
+## Data Sources
 
 ### 1. Cryptocurrency Market Data
 
