@@ -248,7 +248,7 @@ Top 10 Features by Importance:
 ---
 
 ## Results & Outputs
-![Results Metrics](public/metrics.png)
+![model evaluation](4_NLP_Sentiment_Analysis/4_2_Results/results/model_evaluation.png)
 
 ## References
 
